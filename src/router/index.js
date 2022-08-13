@@ -13,6 +13,11 @@ const routes = [
     component: () => import('../views/ReceitaLowCarbPage.vue'),
   },
   {
+    path: '/reclowcarbobrigado',
+    name: 'reclowcarbobrigado',
+    component: () => import('../views/ReceitaLowCarbPageObrigado.vue'),
+  },
+  {
     path: '/afgotars',
     name: 'afgotars',
     component: () => import('../views/AfroGotaPageRS.vue'),

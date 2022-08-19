@@ -322,20 +322,20 @@ export default {
     this.urlCheckout = this.kit97;
     if (this.$route.query.price) {
       switch (this.$route.query.price) {
-        case 97:
+        case '97':
           this.urlCheckout = this.kit97;
           break;
-        case 67:
+        case '67':
           this.urlCheckout = this.kit67;
           break;
         default:
-          this.urlCheckout = this.kit97;
           break;
       }
     }
   },
   methods: {
     openUrl(url) {
+      console.log('url: ', url);
       window.open(url);
     },
   },

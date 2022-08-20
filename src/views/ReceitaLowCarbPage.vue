@@ -1,50 +1,10 @@
 <template lang="pug">
 h-page
-  .row.bg-orange700.h-pa-lg
-    .col.text-white.text-bold
-      .text-h5.text-center PERCA PESO NATURALMENTE EM POUCAS SEMANAS SEGUINDO O PASSO A PASSSO DA NOSSA DIETA LOW CARB.
-
-      .h-mt-lg.text-h5.text-center AGORA VOCÊ PODE COMER DE TUDO E AINDA E AINDA MANTER FORMA.
-
-  .row.bg-white.h-pa-lg
-    .col.text-center
-      .text-h5.text-bold.text-center.text-orange700 RECEITAS DELICIOSAS E EFICAZES TESTADA E APROVADA POR NUTRICIONISTA.
-
-      .h-mt-lg.text-h5.text-red800 ESQUEÇA TUDO O QUE TE FALARAM SOBRE TER QUE COMER COMIDA SEM GRAÇA E SEM SABOR.
-
-      .h-mt-lg.h-.text-h5.text-bold.text-center ASSIM, Você Emagrece Sem Sofrimento E Come As Mais Deliciosas Refeições Testadas E Aprovadas Por Nutricionista.
-
-      .row.justify-center.h-mt-md
-        .col-auto
-          h-btn(
-              rounded
-              size="lg"
-              text-color="text-white"
-              bg-color="bg-purple700"
-              @click="openUrl(urlCheckout)"
-              style="width: 280px"
-            )
-              .text-h5.text-center SIM EU QUERO EMAGRECER
-
-      .row.justify-center.h-mt-md
-        .col-auto
-          img(src="img/site/modo-de-pagamento.png" style="width: 270px")
-
-      .row.justify-center.h-mt-md
-        .col-auto
-          img(src="img/site/comprasegura.png" style="width: 270px")
-
-  .row.bg-orange700.h-pa-lg
-    .col.text-white.text-bold
-      .text-h4.text-center PORQUE EMAGRECER DIETA LOW CARB?
-
-      .h-mt-lg.text-h6.text-center EMAGRECER COMENDO BEM E PERCEBER OS RESULTADOS EM POUCOS DIAS É POSSÍVEL! FAMOSOS ESCONDERAM POR MUITO TEMPO ESSAS RECEITAS POR SEREM TÃO EFICAZES E SAUDÁVEIS.
-
   .row.bg-purple700.h-pa-lg
     .col.text-white.text-bold
-      .text-h4.text-center EMAGREÇA DE VEZ E SEM SOFRIMENTO COM AS
+      .text-h5.text-center EMAGREÇA DE VEZ E SEM SOFRIMENTO COM AS
 
-      .h-mt-lg.text-h4.text-center.text-orange500 300 RECEITAS LOW CARB
+      .text-h5.text-center.text-orange500 300 RECEITAS LOW CARB
 
       .h-mt-lg.text-h6.text-center No Livro Digital 300 Receitas Low Carb, Você Encontrará as Melhoraes e Mais Variadas Receitas Para Todas as Refeições Do Dia.
       .text-h6.text-center Receitas Que Vão Potencializar o seu Emagrecimento De Forma Saudável e Objetiva.
@@ -104,8 +64,8 @@ h-page
               h-btn(
                 rounded
                 text-color="text-white"
-                bg-color="bg-yellow700"
-                @click="openUrl(urlCheckout)"
+                bg-color="bg-green700"
+                @click="goToDiv('prices')"
               )
                 .text-h5.text-center SIM QUERO EMAGRECER
           .row.justify-center.h-mt-md
@@ -159,7 +119,7 @@ h-page
           rounded
           text-color="text-white"
           bg-color="bg-purple700"
-          @click="openUrl(urlCheckout)"
+          @click="goToDiv('prices')"
         )
           .text-h5.text-center QUERO AS RECEITAS AVALIADAS E APROVADAS PELA NUTRICIONISTA
 
@@ -228,12 +188,12 @@ h-page
         .text-orange700.text-h4.text-bold.text-center CASOS REAIS DE PESSOAS QUE FAZEM A DIETA LOW CARB
 
     .row.wrap.justify-center
-      .no-shrink.col-mobile.col-xs-6.col-sm-4.col-md-6.col-lg-3.col-xl-2
+      .no-shrink.col-mobile.col-xs-6.col-sm-5.col-md-6.col-lg-3.col-xl-2
         img(
           src="img/300receitas/depoimento-3.png" alt=""
           style="width:100%"
         )
-      .no-shrink.col-mobile.col-xs-6.col-sm-4.col-md-6.col-lg-3.col-xl-2
+      .no-shrink.col-mobile.col-xs-6.col-sm-5.col-md-6.col-lg-3.col-xl-2
         img(
           src="img/300receitas/depoimento-4.png" alt=""
           style="width:100%"
@@ -249,22 +209,85 @@ h-page
       .no-shrink.col-mobile.col-xs-12.col-sm-6.col-md-5.col-lg-4.col-xl-3
         .text-h6 ESTAMOS TÃO SEGUROS QUE O CONTEÚDO QUE PREPARAMOS PARA VOCÊ NESSE LIVRO DIGITAL SERÁ UM DIVISOR DE ÁGUAS EM SUA VIDA QUE OFERECEMOS PARA VOCÊ 7 DIAS DE GARANTIA. A GARANTIA É INCONDICIONAL, SEM TAXAS DE DEVOLUÇÃO E SEM MULTA. QUEREMOS QUE VOCÊ SE SINTA ABSOLUTAMENTE SEGURO (A) E TENHA UM EMAGRECIMENTO RÁPIDO E SAUDÁVEL COM AS 250 RECEITAS LOW CARB.
 
-  .bg-white.h-pa-lg
-    .text-h5.text-center ADQUIRA AGORA O KIT COMPLETO PELO PREÇO PROMOCIONAL
+  //- .bg-white.h-pa-lg
+  //-   .text-h5.text-center ADQUIRA AGORA O KIT COMPLETO PELO PREÇO PROMOCIONAL
 
-    .row.justify-center.h-mt-md
-      .col-auto
-        h-btn(
-          rounded
-          text-color="text-white"
-          bg-color="bg-purple700"
-          @click="openUrl(urlCheckout)"
-        )
-          .text-h5.text-center SIM EU QUERO EMAGRECER
+  //-   .row.justify-center.h-mt-md
+  //-     .col-auto
+  //-       h-btn(
+  //-         rounded
+  //-         text-color="text-white"
+  //-         bg-color="bg-purple700"
+  //-         @click="openUrl(urlCheckout)"
+  //-       )
+  //-         .text-h5.text-center SIM EU QUERO EMAGRECER
 
-    .row.justify-center.h-mt-md
-      .col-auto
-        img(src="img/site/comprasegura.png" style="width: 270px")
+  //-   .row.justify-center.h-mt-md
+  //-     .col-auto
+  //-       img(src="img/site/comprasegura.png" style="width: 270px")
+  .bg-white
+    .row.wrap.justify-around.align-items-center.h-pa-md.bg-white(ref="prices")
+      .no-shrink.col-mobile.col-xs-12.col-sm-9.col-md-3.col-lg-3.col-xl-2.h-mb-md.h-pa-xs
+        h-card.bg-purple700(style="width:100%")
+          h-card-section.text-center.text-white.h-pa-md
+            .text-h5.text-bold 300 RECEITAS
+            .text-h5.text-bold + 6 BONUS
+            img(
+              src="img/300receitas/capa3d300receitas2.png" alt=""
+              style="width:100%"
+            )
+
+            div(v-if="price === '97'")
+              p.text-bold R$ 97 a vista ou por apenas:
+              .text-h4.text-bold 12x de R$ 9,74
+            div(v-else-if="price === '67'")
+              p.text-bold R$ 67 a vista ou por apenas:
+              .text-h4.text-bold 9x de R$ 8,60
+
+          h-card-actions.text-center
+            h-btn(
+              rounded
+              text="COMPRAR AGORA" text-color="text-white"
+              bg-color="bg-green700"
+              @click="openUrl(urlCheckout)"
+            )
+          h-card-section
+            .h-mt-md.text-center
+              img(src="img/site/comprasegura.png" style="width: 100%")
+
+  .row.bg-orange700.h-pa-lg
+    .col.text-white.text-bold
+      .text-h5.text-center PERCA PESO NATURALMENTE EM POUCAS SEMANAS SEGUINDO O PASSO A PASSSO DA NOSSA DIETA LOW CARB.
+
+      .h-mt-lg.text-h5.text-center AGORA VOCÊ PODE COMER DE TUDO E AINDA E AINDA MANTER FORMA.
+
+  .row.bg-white.h-pa-lg
+    .col.text-center
+      .text-h5.text-bold.text-center.text-orange700 RECEITAS DELICIOSAS E EFICAZES TESTADA E APROVADA POR NUTRICIONISTA.
+
+      .h-mt-lg.text-h5.text-red800 ESQUEÇA TUDO O QUE TE FALARAM SOBRE TER QUE COMER COMIDA SEM GRAÇA E SEM SABOR.
+
+      .h-mt-lg.h-.text-h5.text-bold.text-center ASSIM, Você Emagrece Sem Sofrimento E Come As Mais Deliciosas Refeições Testadas E Aprovadas Por Nutricionista.
+
+      .row.justify-center.h-mt-md
+        .col-auto
+          h-btn(
+              rounded
+              size="lg"
+              text-color="text-white"
+              bg-color="bg-purple700"
+              @click="goToDiv('prices')"
+              style="width: 280px"
+            )
+              .text-h5.text-center SIM EU QUERO EMAGRECER
+
+      .row.justify-center.h-mt-md
+        .col-auto
+          img(src="img/site/modo-de-pagamento.png" style="width: 270px")
+
+      .row.justify-center.h-mt-md
+        .col-auto
+          img(src="img/site/comprasegura.png" style="width: 270px")
 
   .bg-purple700.h-pa-lg
     .column.text-center.h-pa-md
@@ -314,6 +337,7 @@ export default {
     return {
       kit97: 'https://app.monetizze.com.br/checkout/DNM178075?src=site',
       kit67: 'https://app.monetizze.com.br/checkout/DZV178867?src=site',
+      price: '97',
       urlCheckout: '',
       whatsapp: 'https://api.whatsapp.com/send?phone=5516992369369&text=Ol%C3%A1%20vim%20do%20site%20250%20receitas%20lowcarb%20e%20gostaria%20de%20atendimento',
     };
@@ -321,7 +345,8 @@ export default {
   mounted() {
     this.urlCheckout = this.kit97;
     if (this.$route.query.price) {
-      switch (this.$route.query.price) {
+      this.price = this.$route.query.price;
+      switch (this.price) {
         case '97':
           this.urlCheckout = this.kit97;
           break;
@@ -335,8 +360,14 @@ export default {
   },
   methods: {
     openUrl(url) {
-      console.log('url: ', url);
       window.open(url);
+    },
+    goToDiv(refName) {
+      // console.log('goToElement: ', refName);
+      const element = this.$refs[refName];
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     },
   },
 };

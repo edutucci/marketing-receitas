@@ -17,11 +17,6 @@ const routes = [
     name: 'reclowcarbobrigado',
     component: () => import('../views/ReceitaLowCarbPageObrigado.vue'),
   },
-  {
-    path: '/afgotars',
-    name: 'afgotars',
-    component: () => import('../views/AfroGotaPageRS.vue'),
-  },
 ];
 
 const router = createRouter({

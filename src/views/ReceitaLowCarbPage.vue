@@ -1,14 +1,22 @@
 <template lang="pug">
 h-page
+  .h-pos-abs-br(style="z-index: 100; right: 10px; bottom: 10px")
+    h-btn(
+      fab
+      size="lg"
+      text-color="text-white"
+      bg-color="bg-green700"
+      @click="openUrl(whatsapp)"
+    )
+      h-icon(icon="fab fa-whatsapp" text-color="text-white" size="32px")
+
   .row.bg-purple700.h-pa-lg
     .col.text-white.text-bold
       .text-h5.text-center EMAGREÇA DE VEZ E SEM SOFRIMENTO COM AS
 
       .text-h5.text-center.text-orange500 300 RECEITAS LOW CARB
 
-      .h-mt-lg.text-h6.text-center No Livro Digital 300 Receitas Low Carb, Você Encontrará as Melhoraes e Mais Variadas Receitas Para Todas as Refeições Do Dia.
-      .text-h6.text-center Receitas Que Vão Potencializar o seu Emagrecimento De Forma Saudável e Objetiva.
-      .text-h6.text-center Prepare Receitas Deliciosas e Emagrecedoras, e o Melhor de tudo: Receitas que vão Definitivamente Queimar Gordura!
+      .h-mt-lg.text-body1.text-justify Com as 300 Receitas Low Carb, Você Encontrará as Melhores e Mais Variadas Receitas Para Todas as Refeições Do Dia. Receitas Que Vão Potencializar o seu Emagrecimento De Forma Saudável e Objetiva. E o Melhor de tudo: Receitas que vão Definitivamente Queimar Gordura!
 
       .row.justify-center
         .col-auto(style="max-width: 1100px;")
@@ -28,11 +36,6 @@ h-page
                       h-icon(icon="fas fa-check-circle" text-color="text-yellow700")
                     .col.text-left.h-pl-sm.text-bold
                       | Receitas Fáceis, Práticas, Simples E Deliciosas
-                  .row.h-mt-sm.justify-center
-                    .col-auto
-                      h-icon(icon="fas fa-check-circle" text-color="text-yellow700")
-                    .col.text-left.h-pl-sm.text-bold
-                      | 300 Deliciosas Opções De Receitas Low Carb
                   .row.h-mt-sm.justify-center
                     .col-auto
                       h-icon(icon="fas fa-check-circle" text-color="text-yellow700")
@@ -75,7 +78,7 @@ h-page
   .bg-white.h-pa-lg
     .row
       .col.text-center
-        .text-h4.text-bold.text-center O LIVRO DIGITAL 300 RECEITAS LOW CARB ESTÁ DIVIDIDO EM QUATRO MODALIDADES.
+        .text-h6.text-bold.text-center O LIVRO DIGITAL 300 RECEITAS LOW CARB ESTÁ DIVIDIDO EM QUATRO MODALIDADES.
 
     .row.wrap.justify-center
       .no-shrink.col-mobile.col-xs-6.col-sm-4.col-md-6.col-lg-3.col-xl-2
@@ -121,7 +124,7 @@ h-page
           bg-color="bg-purple700"
           @click="goToDiv('prices')"
         )
-          .text-h5.text-center QUERO AS RECEITAS AVALIADAS E APROVADAS PELA NUTRICIONISTA
+          .text-h6.text-center QUERO AS RECEITAS AVALIADAS E APROVADAS PELA NUTRICIONISTA
 
     .row.justify-center.h-mt-md
       .col-auto
@@ -185,7 +188,7 @@ h-page
   .bg-white.h-pa-lg
     .row
       .col.text-center
-        .text-orange700.text-h4.text-bold.text-center CASOS REAIS DE PESSOAS QUE FAZEM A DIETA LOW CARB
+        .text-orange700.text-h5.text-bold.text-center CASOS REAIS DE PESSOAS QUE FAZEM A DIETA LOW CARB
 
     .row.wrap.justify-center
       .no-shrink.col-mobile.col-xs-6.col-sm-5.col-md-6.col-lg-3.col-xl-2
@@ -207,7 +210,7 @@ h-page
           style="width:100%"
         )
       .no-shrink.col-mobile.col-xs-12.col-sm-6.col-md-5.col-lg-4.col-xl-3
-        .text-h6 ESTAMOS TÃO SEGUROS QUE O CONTEÚDO QUE PREPARAMOS PARA VOCÊ NESSE LIVRO DIGITAL SERÁ UM DIVISOR DE ÁGUAS EM SUA VIDA QUE OFERECEMOS PARA VOCÊ 7 DIAS DE GARANTIA. A GARANTIA É INCONDICIONAL, SEM TAXAS DE DEVOLUÇÃO E SEM MULTA. QUEREMOS QUE VOCÊ SE SINTA ABSOLUTAMENTE SEGURO (A) E TENHA UM EMAGRECIMENTO RÁPIDO E SAUDÁVEL COM AS 250 RECEITAS LOW CARB.
+        .text-body1 ESTAMOS TÃO SEGUROS QUE O CONTEÚDO QUE PREPARAMOS PARA VOCÊ NESSE LIVRO DIGITAL SERÁ UM DIVISOR DE ÁGUAS EM SUA VIDA QUE OFERECEMOS PARA VOCÊ 7 DIAS DE GARANTIA INCONDICIONAL, SEM TAXAS DE DEVOLUÇÃO E SEM MULTA. QUEREMOS QUE VOCÊ SE SINTA ABSOLUTAMENTE SEGURO (A) E ALCANCE SEU PESO IDEAL DE FORMA SAUDÁVEL COM AS RECEITAS LOW CARB.
 
   //- .bg-white.h-pa-lg
   //-   .text-h5.text-center ADQUIRA AGORA O KIT COMPLETO PELO PREÇO PROMOCIONAL
@@ -255,39 +258,35 @@ h-page
             .h-mt-md.text-center
               img(src="img/site/comprasegura.png" style="width: 100%")
 
+  .row.h-pa-lg
+    .col.text-orange700.text-bold
+      .text-h5.text-center RECEITAS DELICIOSAS E EFICAZES TESTADA E APROVADA POR NUTRICIONISTA.
+
   .row.bg-orange700.h-pa-lg
     .col.text-white.text-bold
-      .text-h5.text-center PERCA PESO NATURALMENTE EM POUCAS SEMANAS SEGUINDO O PASSO A PASSSO DA NOSSA DIETA LOW CARB.
+      .text-body1.text-center PERCA PESO NATURALMENTE EM POUCAS SEMANAS SEGUINDO O PASSO A PASSO DA NOSSA DIETA LOW CARB.
 
-      .h-mt-lg.text-h5.text-center AGORA VOCÊ PODE COMER DE TUDO E AINDA E AINDA MANTER FORMA.
+      .h-mt-lg.text-body1.text-center AGORA VOCÊ PODE COMER DE TUDO E AINDA MANTER FORMA.
 
-  .row.bg-white.h-pa-lg
-    .col.text-center
-      .text-h5.text-bold.text-center.text-orange700 RECEITAS DELICIOSAS E EFICAZES TESTADA E APROVADA POR NUTRICIONISTA.
+  .row.justify-center.h-mt-md
+    .col-auto
+      h-btn(
+          rounded
+          size="lg"
+          text-color="text-white"
+          bg-color="bg-purple700"
+          @click="goToDiv('prices')"
+          style="width: 280px"
+        )
+          .text-h5.text-center SIM EU QUERO EMAGRECER
 
-      .h-mt-lg.text-h5.text-red800 ESQUEÇA TUDO O QUE TE FALARAM SOBRE TER QUE COMER COMIDA SEM GRAÇA E SEM SABOR.
+  .row.justify-center.h-mt-md
+    .col-auto
+      img(src="img/site/modo-de-pagamento.png" style="width: 270px")
 
-      .h-mt-lg.h-.text-h5.text-bold.text-center ASSIM, Você Emagrece Sem Sofrimento E Come As Mais Deliciosas Refeições Testadas E Aprovadas Por Nutricionista.
-
-      .row.justify-center.h-mt-md
-        .col-auto
-          h-btn(
-              rounded
-              size="lg"
-              text-color="text-white"
-              bg-color="bg-purple700"
-              @click="goToDiv('prices')"
-              style="width: 280px"
-            )
-              .text-h5.text-center SIM EU QUERO EMAGRECER
-
-      .row.justify-center.h-mt-md
-        .col-auto
-          img(src="img/site/modo-de-pagamento.png" style="width: 270px")
-
-      .row.justify-center.h-mt-md
-        .col-auto
-          img(src="img/site/comprasegura.png" style="width: 270px")
+  .row.justify-center.h-mt-md
+    .col-auto
+      img(src="img/site/comprasegura.png" style="width: 270px")
 
   .bg-purple700.h-pa-lg
     .column.text-center.h-pa-md
@@ -339,7 +338,7 @@ export default {
       kit67: 'https://app.monetizze.com.br/checkout/DZV178867?src=site',
       price: '97',
       urlCheckout: '',
-      whatsapp: 'https://api.whatsapp.com/send?phone=5516992369369&text=Ol%C3%A1%20vim%20do%20site%20250%20receitas%20lowcarb%20e%20gostaria%20de%20atendimento',
+      whatsapp: 'https://api.whatsapp.com/send?phone=5516992369369&text=Ol%C3%A1%20vim%20do%20site%20receitas%20lowcarb%20e%20gostaria%20de%20atendimento',
     };
   },
   mounted() {

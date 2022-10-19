@@ -36,7 +36,6 @@ export default {
   name: '250Receitasobrigado',
   data() {
     return {
-      kit67: 'https://app.monetizze.com.br/checkout/DNM178075?src=site',
       whatsapp: 'https://api.whatsapp.com/send?phone=5516992369369&text=Ol%C3%A1%20vim%20do%20site%20250%20receitas%20lowcarb%20e%20gostaria%20de%20atendimento',
     };
   },

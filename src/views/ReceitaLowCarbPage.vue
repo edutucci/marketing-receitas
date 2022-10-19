@@ -11,12 +11,11 @@ h-page
       h-icon(icon="fab fa-whatsapp" text-color="text-white" size="32px")
 
   .row.bg-purple700.h-pa-lg
-    .col.text-white.text-bold
-      .text-h5.text-center EMAGREÇA DE VEZ E SEM SOFRIMENTO COM AS
+    .col.text-white.text-bold.text-center
+      span.text-h5.text-center.text-center VEJA COMO É SIMPLES PERDER DE
+        span.text-h5.text-orange500  3 A 5KG EM POUCOS DIAS!
 
-      .text-h5.text-center.text-orange500 300 RECEITAS LOW CARB
-
-      .h-mt-lg.text-body1.text-justify Com as 300 Receitas Low Carb, Você Encontrará as Melhores e Mais Variadas Receitas Para Todas as Refeições Do Dia. Receitas Que Vão Potencializar o seu Emagrecimento De Forma Saudável e Objetiva. E o Melhor de tudo: Receitas que vão Definitivamente Queimar Gordura!
+      .h-mt-lg.text-body1.text-center Com as 300 Receitas Low Carb, Você Encontrará as Melhores e Mais Variadas Receitas que vão Definitivamente Queimar Gordura!
 
       .row.justify-center
         .col-auto(style="max-width: 1100px;")
@@ -30,7 +29,7 @@ h-page
                     .col-auto
                       h-icon(icon="fas fa-check-circle" text-color="text-yellow700")
                     .col.text-left.h-pl-sm.text-bold
-                      | Livro 100% Digital E Totalmente Em Português.
+                      | Receitas Saudáveis Para Toda Família
                   .row.h-mt-sm.justify-center
                     .col-auto
                       h-icon(icon="fas fa-check-circle" text-color="text-yellow700")
@@ -46,11 +45,6 @@ h-page
                       h-icon(icon="fas fa-check-circle" text-color="text-yellow700")
                     .col.text-left.h-pl-sm.text-bold
                       | Cardápio Aprovado Por Nutricionistas
-                  .row.h-mt-sm.justify-center
-                    .col-auto
-                      h-icon(icon="fas fa-check-circle" text-color="text-yellow700")
-                    .col.text-left.h-pl-sm.text-bold
-                      | Entrega Imediata E Sem Taxas
                   .row.h-mt-sm.justify-center
                     .col-auto
                       h-icon(icon="fas fa-check-circle" text-color="text-yellow700")
@@ -193,7 +187,7 @@ h-page
     .row.wrap.justify-center
       .no-shrink.col-mobile.col-xs-6.col-sm-5.col-md-6.col-lg-3.col-xl-2
         img(
-          src="img/300receitas/depoimento-3.png" alt=""
+          src="img/300receitas/depoimento-3-2.png" alt=""
           style="width:100%"
         )
       .no-shrink.col-mobile.col-xs-6.col-sm-5.col-md-6.col-lg-3.col-xl-2
@@ -259,12 +253,12 @@ h-page
               img(src="img/site/comprasegura.png" style="width: 100%")
 
   .row.h-pa-lg
-    .col.text-orange700.text-bold
+    .col.text-purple700.text-bold
       .text-h5.text-center RECEITAS DELICIOSAS E EFICAZES TESTADA E APROVADA POR NUTRICIONISTA.
 
   .row.bg-orange700.h-pa-lg
     .col.text-white.text-bold
-      .text-body1.text-center PERCA PESO NATURALMENTE EM POUCAS SEMANAS SEGUINDO O PASSO A PASSO DA NOSSA DIETA LOW CARB.
+      .text-body1.text-center DIGA ADEUS AS GORDURAS LOCALIZADAS SEGUINDO O PASSO A PASSO DA NOSSA DIETA LOW CARB.
 
       .h-mt-lg.text-body1.text-center AGORA VOCÊ PODE COMER DE TUDO E AINDA MANTER FORMA.
 
@@ -334,8 +328,8 @@ export default {
   name: '300ReceitasLowCarb',
   data() {
     return {
-      kit97: 'https://app.monetizze.com.br/checkout/DNM178075?src=site',
-      kit67: 'https://app.monetizze.com.br/checkout/DZV178867?src=site',
+      kit97: 'https://app.monetizze.com.br/checkout/KYP254742?src=site',
+      kit67: 'https://app.monetizze.com.br/checkout/KEC255541?src=site',
       price: '97',
       urlCheckout: '',
       whatsapp: 'https://api.whatsapp.com/send?phone=5516992369369&text=Ol%C3%A1%20vim%20do%20site%20receitas%20lowcarb%20e%20gostaria%20de%20atendimento',

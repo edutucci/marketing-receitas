@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>Receitas Saudaveis - Receitas low carb</title>
+
+    <link rel="stylesheet" href="css/chunk-vendors.c2ac53cf.css">
+
+    <style>
+      .whatsapp {
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+      }
+
+      .myButton {
+        background-color:#44c767;
+        border-radius:28px;
+        border:1px solid #18ab29;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:17px;
+        padding:16px 31px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #2f6627;
+        max-width: 400px;
+      }
+      .myButton:hover {
+        background-color:#5cbf2a;
+      }
+      .myButton:active {
+        position:relative;
+        top:1px;
+      }
+
+      input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+      }
+      .accordion-wrapper {
+          border-radius: 8px;
+          overflow: hidden;
+          box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+          max-width: 85vw;
+      }
+      .accordion {
+          color: white;
+          overflow: hidden;
+          margin-bottom: 16px;
+      }
+      .accordion:last-child{
+          margin-bottom: 0;
+      }
+      .accordion-label {
+          display: flex;
+          -webkit-box-pack: justify;
+          justify-content: space-between;
+          padding: 16px;
+          background: rgba(4,57,94,.8);
+          font-weight: bold;
+          cursor: pointer;
+          font-size: 20px;
+      }
+      .accordion-label:hover {
+          background: rgba(4,57,94,1);
+      }
+      .accordion-label::after {
+          content: "\276F";
+          width: 16px;
+          height: 16px;
+          text-align: center;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+      }
+      .accordion-content {
+          max-height: 0;
+          padding: 0 16px;
+          color: rgba(4,57,94,1);
+          background: white;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+      }
+      .accordion-content p{
+          margin: 0;
+          color: rgba(4,57,94,.7);
+          font-size: 18px;
+      }
+      input:checked + .accordion-label {
+          background: rgba(4,57,94,1);
+      }
+      input:checked + .accordion-label::after {
+          -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+      }
+      input:checked ~ .accordion-content {
+          max-height: 100vh;
+          padding: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function goToDiv(name) {
+        const element = document.getElementById(name)
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+
+      function openUrl() {
+        window.open('https://app.monetizze.com.br/checkout/KYP254742?src=site');
+      } 
+
+      function openWhatsApp() {
+        window.open('https://api.whatsapp.com/send?phone=5516992369369&text=Ol%C3%A1%20vim%20do%20site%20receitas%20lowcarb%20e%20gostaria%20de%20atendimento');
+      }
+    </script>
+    <div class="main">
+      <div class="whatsapp" onclick="openWhatsApp()" style="cursor: pointer; z-index: 100; right: 10px; bottom: 10px">
+        <img src="img/300receitas/whastapp.png" style="width:64px; height: 64px;"/>
+      </div>
+      <div class="row bg-purple700 h-pa-lg">
+        <div class="col text-white text-bold text-center"><span class="text-h5 text-center text-center">VEJA COMO É SIMPLES PERDER DE<span class="text-h5 text-orange500"> 3 A 5KG EM POUCOS DIAS!</span></span>
+          <div class="h-mt-lg text-body1 text-center">Com as 300 Receitas Low Carb, Você Encontrará as Melhores e Mais Variadas Receitas que vão Definitivamente Queimar Gordura!</div>
+          <div class="row justify-center">
+            <div class="col-auto" style="max-width: 1100px;">
+              <div class="row wrap justify-center align-items-center">
+                <div class="text-center col-mobile col-xs-12 col-sm-6 col-md-5 col-lg-4 col-xl-3"><img src="img/300receitas/capa3d300receitas2.png" style="width:100%"/></div>
+                <div class="text-center col-mobile col-xs-12 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+                  <div class="row justify-center h-mt-md">
+                    <div class="col-auto">
+                      <div class="row h-mt-sm justify-center">
+                        <div class="col-auto">
+                          <h-icon icon="fas fa-check-circle" text-color="text-yellow700"></h-icon>
+                        </div>
+                        <div class="col text-left h-pl-sm text-bold">Receitas Saudáveis Para Toda Família</div>
+                      </div>
+                      <div class="row h-mt-sm justify-center">
+                        <div class="col-auto">
+                          <h-icon icon="fas fa-check-circle" text-color="text-yellow700"></h-icon>
+                        </div>
+                        <div class="col text-left h-pl-sm text-bold">Receitas Fáceis, Práticas, Simples E Deliciosas</div>
+                      </div>
+                      <div class="row h-mt-sm justify-center">
+                        <div class="col-auto">
+                          <h-icon icon="fas fa-check-circle" text-color="text-yellow700"></h-icon>
+                        </div>
+                        <div class="col text-left h-pl-sm text-bold">Opções Para Todas As Refeições Do Dia</div>
+                      </div>
+                      <div class="row h-mt-sm justify-center">
+                        <div class="col-auto">
+                          <h-icon icon="fas fa-check-circle" text-color="text-yellow700"></h-icon>
+                        </div>
+                        <div class="col text-left h-pl-sm text-bold">Cardápio Aprovado Por Nutricionistas</div>
+                      </div>
+                      <div class="row h-mt-sm justify-center">
+                        <div class="col-auto">
+                          <h-icon icon="fas fa-check-circle" text-color="text-yellow700"></h-icon>
+                        </div>
+                        <div class="col text-left h-pl-sm text-bold">6 Bônus PRO Exclusivos</div>
+                      </div>
+                      <div class="row h-mt-sm justify-center">
+                        <div class="col-auto">
+                          <h-icon icon="fas fa-check-circle" text-color="text-yellow700"></h-icon>
+                        </div>
+                        <div class="col text-left h-pl-sm text-bold">Satisfação 100% Garantida</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-center h-mt-md">
+                <div class="col-auto">
+                  <div class="myButton" text-color="text-white" bg-color="bg-green700" onclick="goToDiv('prices')">
+                    <div class="text-h5 text-center">SIM QUERO EMAGRECER</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-center h-mt-md">
+                <div class="col-auto"><img src="img/site/comprasegura.png" style="width: 270px"/></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white h-pa-lg">
+        <div class="row">
+          <div class="col text-center">
+            <div class="text-h6 text-bold text-center">O LIVRO DIGITAL 300 RECEITAS LOW CARB ESTÁ DIVIDIDO EM QUATRO MODALIDADES.</div>
+          </div>
+        </div>
+        <div class="row wrap justify-center">
+          <div class="no-shrink col-mobile col-xs-6 col-sm-4 col-md-6 col-lg-3 col-xl-2"><img src="img/300receitas/cafe-da-manha-lowcarb.png" alt="" style="width:100%"/>
+            <div class="text-h5 text-bold text-center">CAFÉ DA MANHÃ</div>
+            <p class="text-center">Descubra A Sensação De Começar Bem O Dia Com Refeições Que Vão Te Deixar Com Água Na Boca.</p>
+          </div>
+          <div class="no-shrink col-mobile col-xs-6 col-sm-4 col-md-6 col-lg-3 col-xl-2"><img src="img/300receitas/almoco-e-jantar-low-carb.png" alt="" style="width:100%"/>
+            <div class="text-h5 text-bold text-center">ALMOÇO, JANTAR E SALADAS</div>
+            <p class="text-center">Tenha Um Almoço E Um Jantar Saboroso Com As Refeições Que Preparamos Especialmente Para Você.</p>
+          </div>
+          <div class="no-shrink col-mobile col-xs-6 col-sm-4 col-md-6 col-lg-3 col-xl-2"><img src="img/300receitas/sopalowcarb.png" alt="" style="width:100%"/>
+            <div class="text-h5 text-bold text-center">SOPAS</div>
+            <p class="text-center">Sopas Deliciosas Preparadas Especialmente para Você.</p>
+          </div>
+          <div class="no-shrink col-mobile col-xs-6 col-sm-4 col-md-6 col-lg-3 col-xl-2"><img src="img/300receitas/doces-lowcarb.jpg" alt="" style="width:100%"/>
+            <div class="text-h5 text-bold text-center">DOCES E SOBREMESAS</div>
+            <p class="text-center">Separamos Os Melhores Doces E Sobremesas Saudáveis E Deliciosos Para Você Comer Sem Medo E Sem Culpa.</p>
+          </div>
+        </div>
+        <div class="row justify-center h-mt-md">
+          <div class="col-auto">
+            <div class="myButton" text-color="text-white" bg-color="bg-purple700" onclick="goToDiv('prices')">
+              <div class="text-h6 text-center">QUERO AS RECEITAS AVALIADAS E APROVADAS PELA NUTRICIONISTA</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-center h-mt-md">
+          <div class="col-auto"><img src="img/site/comprasegura.png" style="width: 270px"/></div>
+        </div>
+      </div>
+
+      <div class="h-pa-lg bg-orange700 text-white text-center">
+        <div class="text-h6">ALÉM DAS 300 RECEITAS LOW CARB VOCÊ VAI RECEBER GRATUITAMENTE</div>
+        <div class="h-mt-md text-h4">+ 6 BÔNUS PRO EXCLUSIVOS</div>
+      </div>
+
+      <div class="bg-purple700 h-pa-lg">
+        <div class="row wrap justify-center align-items-center text-white">
+          <div class="no-shrink col-mobile col-xs-6 col-sm-4 col-md-4 col-lg-3 col-xl-2"><img src="img/300receitas/receitadetox3d.png" alt="" style="width:100%"/>
+            <div class="text-h6 text-bold text-center h-pa-sm">RECEITAS DETOX</div>
+          </div>
+          <div class="no-shrink col-mobile col-xs-6 col-sm-4 col-md-4 col-lg-3 col-xl-2"><img src="img/300receitas/vitaminas3d.png" alt="" style="width:100%"/>
+            <div class="text-h6 text-bold text-center h-pa-sm">VITAMINAS</div>
+          </div>
+          <div class="no-shrink col-mobile col-xs-6 col-sm-4 col-md-4 col-lg-3 col-xl-2"><img src="img/300receitas/exercicios3d.png" alt="" style="width:100%"/>
+            <div class="text-h6 text-bold text-center h-pa-sm">EXERCÍCIOS SEMANAIS</div>
+          </div>
+          <div class="no-shrink col-mobile col-xs-6 col-sm-4 col-md-4 col-lg-3 col-xl-2"><img src="img/300receitas/danca3d.png" alt="" style="width:100%"/>
+            <div class="text-h6 text-bold text-center h-pa-sm">COMO QUEIMAR GORDURA COM DANÇA</div>
+          </div>
+          <div class="no-shrink col-mobile col-xs-6 col-sm-4 col-md-4 col-lg-3 col-xl-2"><img src="img/300receitas/capa3dperderpesocomendo.png" alt="" style="width:100%"/>
+            <div class="text-h6 text-bold text-center h-pa-sm">COMO PERDER PESO COMENDO</div>
+          </div>
+          <div class="no-shrink col-mobile col-xs-6 col-sm-4 col-md-4 col-lg-3 col-xl-2"><img src="img/300receitas/alimentosav3d.png" alt="" style="width:100%"/>
+            <div class="text-h6 text-bold text-center h-pa-sm">ALIMENTOS ANTI-ENVELHECIMENTO</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white h-pa-lg">
+        <div class="row">
+          <div class="col text-center">
+            <div class="text-orange700 text-h5 text-bold text-center">CASOS REAIS DE PESSOAS QUE FAZEM A DIETA LOW CARB</div>
+          </div>
+        </div>
+        <div class="row wrap justify-center">
+          <div class="no-shrink col-mobile col-xs-6 col-sm-5 col-md-6 col-lg-3 col-xl-2"><img src="img/300receitas/depoimento-3-2.png" alt="" style="width:100%"/></div>
+          <div class="no-shrink col-mobile col-xs-6 col-sm-5 col-md-6 col-lg-3 col-xl-2"><img src="img/300receitas/depoimento-4.png" alt="" style="width:100%"/></div>
+        </div>
+      </div>
+
+      <div class="h-pa-lg bg-orange700">
+        <div class="row wrap text-white justify-center align-items-center">
+          <div class="no-shrink col-mobile col-xs-12 col-sm-6 col-md-5 col-lg-4 col-xl-3"><img src="img/300receitas/selo7dias.png" alt="" style="width:100%"/></div>
+          <div class="no-shrink col-mobile col-xs-12 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+            <div class="text-body1">ESTAMOS TÃO SEGUROS QUE O CONTEÚDO QUE PREPARAMOS PARA VOCÊ NESSE LIVRO DIGITAL SERÁ UM DIVISOR DE ÁGUAS EM SUA VIDA QUE OFERECEMOS PARA VOCÊ 7 DIAS DE GARANTIA INCONDICIONAL, SEM TAXAS DE DEVOLUÇÃO E SEM MULTA. QUEREMOS QUE VOCÊ SE SINTA ABSOLUTAMENTE SEGURO (A) E ALCANCE SEU PESO IDEAL DE FORMA SAUDÁVEL COM AS RECEITAS LOW CARB.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white">
+        <div class="row wrap justify-around align-items-center h-pa-md bg-white" id="prices">
+          <div class="no-shrink col-mobile col-xs-12 col-sm-9 col-md-3 col-lg-3 col-xl-2 h-mb-md h-pa-xs">
+            <div class="border border-radius bg-purple700" style="width:100%">
+              <div class="text-center text-white h-pa-md">
+                <div class="text-h5 text-bold">300 RECEITAS</div>
+                <div class="text-h5 text-bold">+ 6 BONUS</div><img src="img/300receitas/capa3d300receitas2.png" alt="" style="width:100%"/>
+                <div>
+                  <p class="text-bold">R$ 97 a vista ou por apenas:</p>
+                  <div class="text-h4 text-bold">12x de R$ 9,74</div>
+                </div>
+              </div>
+              <div class="text-center">
+                <div class="myButton" onclick="openUrl()">COMPRAR AGORA</div>
+              </div>
+              <div>
+                <div class="h-mt-md text-center h-pa-sm"><img src="img/site/comprasegura.png" style="width: 100%"/></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row h-pa-lg">
+        <div class="col text-purple700 text-bold">
+          <div class="text-h5 text-center">RECEITAS DELICIOSAS E EFICAZES TESTADA E APROVADA POR NUTRICIONISTA.</div>
+        </div>
+      </div>
+
+      <div class="row bg-orange700 h-pa-lg">
+        <div class="col text-white text-bold">
+          <div class="text-body1 text-center">DIGA ADEUS AS GORDURAS LOCALIZADAS SEGUINDO O PASSO A PASSO DA NOSSA DIETA LOW CARB.</div>
+          <div class="h-mt-lg text-body1 text-center">AGORA VOCÊ PODE COMER DE TUDO E AINDA MANTER FORMA.</div>
+        </div>
+      </div>
+
+      <div class="row justify-center h-mt-md">
+        <div class="col-auto">
+          <div class="myButton" size="lg" text-color="text-white" bg-color="bg-purple700" onclick="goToDiv('prices')" style="width: 280px">
+            <div class="text-h5 text-center">SIM EU QUERO EMAGRECER</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-center h-mt-md">
+        <div class="col-auto"><img src="img/site/modo-de-pagamento.png" style="width: 270px"/></div>
+      </div>
+
+      <div class="row justify-center h-mt-md">
+        <div class="col-auto"><img src="img/site/comprasegura.png" style="width: 270px"/></div>
+      </div>
+
+      <div class="bg-purple700 h-pa-lg">
+        <div class="text-h3 text-white text-center text-bold">Dúvidas Frequentes</div>
+        <div class="row justify-center h-mt-md">
+          <div class="col-auto">
+            <div class="accordion-wrapper">
+              <div class="accordion">
+                <input type="radio" name="radio-a" id="check1" checked>
+                <label class="accordion-label" for="check1">Como eu vou receber as receitas?</label>
+                <div class="accordion-content">
+                  <p>O conteúdo é 100% online. Você receberá o acesso através do seu e-mail.</p>
+                </div>
+              </div>
+              <div class="accordion">
+                <input type="radio" name="radio-a" id="check2" checked>
+                <label class="accordion-label" for="check2">Em quanto tempo eu posso começar a ver resultados?</label>
+                <div class="accordion-content">
+                  <p>Os Resultados com a Dieta Low Carb aparecem logo nos primeiros dias. Vocẽ vai perceber que suas roupas vão ficar mais folgadas e você vai desinchar muito.</p>
+                </div>
+              </div>
+              <div class="accordion">
+                <input type="radio" name="radio-a" id="check3" checked>
+                <label class="accordion-label" for="check3">Tenho que pagar todos os meses para continuar pariticipando?</label>
+                <div class="accordion-content">
+                  <p>Não. Com apenas um pagamento você terá acesso ao conteúdo completo.</p>
+                </div>
+              </div>
+              <div class="accordion">
+                <input type="radio" name="radio-a" id="check4" checked>
+                <label class="accordion-label" for="check4">Meu dia é corrido e não tenho muito tempo. Vai funcionar pra mim?</label>
+                <div class="accordion-content">
+                  <p>Sim. Temos várias clientes que trabalham o dia todo ainda sim conseguem ter resultados excelentes.</p>
+                </div>
+              </div>
+              <div class="accordion">
+                <input type="radio" name="radio-a" id="check5" checked>
+                <label class="accordion-label" for="check5">Em quanto tempo eu recebo o conteúdo?</label>
+                <div class="accordion-content">
+                  <p>Pagando com Cartão de Crédito receberá de imediato.</p>
+                  <p>Pagando por Boleto. Assim que for compensado de 1 a 2 dias uteis, receberá no e-mail cadastrado.</p>
+                </div>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-orange700 h-pa-lg">
+        <div class="row wrap justify-center">
+          <div class="col-auto">
+            <div class="text-body1 text-bold text-center text-white">FORMA DE PAGAMENTO</div><br/><img class="cursor-pointer" src="img/site/modo-de-pagamento.png" alt="" style="width:250px"/>
+          </div>
+          <div class="col-auto h-pa-sm text-white text-center">
+            <div class="text-h6 text-bold text-center">DÚVIDAS</div><br/>
+            <div class="myButton" onclick="openWhatsApp()">Atendimento</div>
+            <p>Seg a Sex 13:00 às 21:30hs</p>
+            <p>Sab e Dom 9:00 as 14:00hs</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>

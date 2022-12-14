@@ -234,12 +234,15 @@ h-page
               style="width:100%"
             )
 
-            div(v-if="price === '97'")
-              p.text-bold R$ 97 a vista ou por apenas:
-              .text-h4.text-bold 12x de R$ 9,74
+            div(v-if="price === '77'")
+              p.text-bold R$ 77 a vista ou por apenas:
+              .text-h4.text-bold 11x de R$ 8,32
             div(v-else-if="price === '67'")
               p.text-bold R$ 67 a vista ou por apenas:
               .text-h4.text-bold 9x de R$ 8,60
+            div(v-else-if="price === '49'")
+              p.text-bold R$ 49,90 a vista ou por apenas:
+              .text-h4.text-bold 7x de R$ 8,01
 
           h-card-actions.text-center
             h-btn(
@@ -328,28 +331,40 @@ export default {
   name: '300ReceitasLowCarb',
   data() {
     return {
-      kit97: 'https://app.monetizze.com.br/checkout/KYP254742?src=site',
-      kit67: 'https://app.monetizze.com.br/checkout/KEC255541?src=site',
-      price: '97',
+      kit77: 'https://app.monetizze.com.br/checkout/KYP254742',
+      kit67: 'https://app.monetizze.com.br/checkout/KEC255541',
+      kit49: 'https://app.monetizze.com.br/checkout/KUD273892',
+      price: '77',
       urlCheckout: '',
       whatsapp: 'https://api.whatsapp.com/send?phone=5516992369369&text=Ol%C3%A1%20vim%20do%20site%20receitas%20lowcarb%20e%20gostaria%20de%20atendimento',
+      src: '?src=site',
     };
   },
   mounted() {
-    this.urlCheckout = this.kit97;
+    if (this.$route.query.src) {
+      this.src = `?src=${this.$route.query.src}`;
+    }
+
+    this.urlCheckout = this.kit77;
     if (this.$route.query.price) {
       this.price = this.$route.query.price;
       switch (this.price) {
-        case '97':
-          this.urlCheckout = this.kit97;
+        case '77':
+          this.urlCheckout = this.kit77;
           break;
         case '67':
           this.urlCheckout = this.kit67;
           break;
+        case '49':
+          this.urlCheckout = this.kit49;
+          break;
         default:
+          this.urlCheckout = this.kit77;
           break;
       }
     }
+
+    this.urlCheckout = `${this.urlCheckout}${this.src}`;
   },
   methods: {
     openUrl(url) {

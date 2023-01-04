@@ -185,14 +185,46 @@ h-page
         .text-orange700.text-h5.text-bold.text-center CASOS REAIS DE PESSOAS QUE FAZEM A DIETA LOW CARB
 
     .row.wrap.justify-center
-      .no-shrink.col-mobile.col-xs-6.col-sm-5.col-md-6.col-lg-3.col-xl-2
+      .no-shrink.col-mobile.col-xs-12.col-sm-6.col-md-6.col-lg-3.col-xl-2
         img(
           src="img/300receitas/depoimento-3-2.png" alt=""
           style="width:100%"
         )
-      .no-shrink.col-mobile.col-xs-6.col-sm-5.col-md-6.col-lg-3.col-xl-2
+      .no-shrink.col-mobile.col-xs-12.col-sm-6.col-md-6.col-lg-3.col-xl-2
         img(
           src="img/300receitas/depoimento-4.png" alt=""
+          style="width:100%"
+        )
+      .no-shrink.col-mobile.col-xs-12.col-sm-6.col-md-6.col-lg-3.col-xl-2
+        img(
+          src="img/300receitas/depoimento-5.png" alt=""
+          style="width:100%"
+        )
+      .no-shrink.col-mobile.col-xs-12.col-sm-6.col-md-6.col-lg-3.col-xl-2
+        img(
+          src="img/300receitas/depoimento-6.png" alt=""
+          style="width:100%"
+        )
+
+    .row.wrap.justify-center
+      .no-shrink.col-mobile.col-xs-12.col-sm-6.col-md-6.col-lg-3.col-xl-2
+        img(
+          src="img/300receitas/cliente-aline.png" alt=""
+          style="width:100%"
+        )
+      .no-shrink.col-mobile.col-xs-12.col-sm-6.col-md-6.col-lg-3.col-xl-2
+        img(
+          src="img/300receitas/cliente-karla.png" alt=""
+          style="width:100%"
+        )
+      .no-shrink.col-mobile.col-xs-12.col-sm-6.col-md-6.col-lg-3.col-xl-2
+        img(
+          src="img/300receitas/cliente-livia.png" alt=""
+          style="width:100%"
+        )
+      .no-shrink.col-mobile.col-xs-12.col-sm-6.col-md-6.col-lg-3.col-xl-2
+        img(
+          src="img/300receitas/cliente-luciana.png" alt=""
           style="width:100%"
         )
 
@@ -332,7 +364,7 @@ export default {
 
     if (this.$route.query.plataforma) {
       const localPlataforma = this.$route.query.plataforma.split('-');
-      console.log('localPlataforma: ', JSON.stringify(localPlataforma));
+      // console.log('localPlataforma: ', JSON.stringify(localPlataforma));
       // eslint-disable-next-line prefer-destructuring
       this.plataforma = localPlataforma[0];
       // eslint-disable-next-line prefer-destructuring
@@ -343,9 +375,9 @@ export default {
       this.src = `?src=${this.$route.query.src}`;
     }
 
-    console.log('mounted plataforma: ', this.plataforma);
-    console.log('mounted src: ', this.src);
-    console.log('mounted price: ', this.price);
+    // console.log('mounted plataforma: ', this.plataforma);
+    // console.log('mounted src: ', this.src);
+    // console.log('mounted price: ', this.price);
 
     this.showcheckout = true;
   },

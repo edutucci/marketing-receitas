@@ -73,7 +73,12 @@ export default {
   },
   methods: {
     openUrl(url) {
-      window.open(url);
+      try {
+        window.fbq('track', 'InitiateCheckout');
+        window.open(url);
+      } catch (error) {
+        console.log(error);
+      }
     },
   },
 };

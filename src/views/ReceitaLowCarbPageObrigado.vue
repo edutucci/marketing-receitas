@@ -2,7 +2,7 @@
 h-page
   .row
     .col.text-center
-      .text-h5.text-bold.text-center 250 RECEITAS LOW CARB.
+      .text-h5.text-bold.text-center 300 RECEITAS LOW CARB.
 
   .row.wrap.justify-center.align-items-center
     .text-center.col-mobile.col-xs-12.col-sm-6.col-md-5.col-lg-4.col-xl-3
@@ -33,13 +33,23 @@ h-page
 
 <script>
 export default {
-  name: '250Receitasobrigado',
+  name: '300Receitasobrigado',
   data() {
     return {
       whatsapp: 'https://api.whatsapp.com/send?phone=5516992369369&text=Ol%C3%A1%20vim%20do%20site%20250%20receitas%20lowcarb%20e%20gostaria%20de%20atendimento',
     };
   },
+  created() {
+    this.trackPurchase();
+  },
   methods: {
+    trackPurchase() {
+      try {
+        window.fbq('track', 'Purchase', { value: 0.00, currency: 'BRL' });
+      } catch (error) {
+        console.log(error);
+      }
+    },
     openUrl(url) {
       window.open(url);
     },

@@ -73,6 +73,7 @@ export default {
   },
   methods: {
     openUrl(url) {
+      window.fbq('track', 'InitiateCheckout');
       window.open(url);
     },
   },

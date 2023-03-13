@@ -309,7 +309,7 @@ h-page
         h-collapsible-menu.h-mt-md(icon="fas fa-question-circle" text="Em quanto tempo eu posso começar a ver resultados?")
           .text-body.bg-gray200.h-pa-md Os Resultados com a Dieta Low Carb aparecem logo nos primeiros dias. Vocẽ vai perceber que suas roupas vão ficar mais folgadas e você vai desinchar muito.
 
-        h-collapsible-menu.h-mt-md(icon="fas fa-question-circle" text="Tenho que pagar todos os meses para continuar pariticipando?")
+        h-collapsible-menu.h-mt-md(icon="fas fa-question-circle" text="Tenho que pagar todos os meses para continuar participando?")
           .text-body.bg-gray200.h-pa-md Não. Com apenas um pagamento você terá acesso ao conteúdo completo.
 
         h-collapsible-menu.h-mt-md(icon="fas fa-question-circle" text="Meu dia é corrido e não tenho muito tempo. Vai funcionar pra mim?")
@@ -341,8 +341,8 @@ h-page
 
 <script>
 
-import CheckoutKiwifyVue from '../components/CheckoutKiwify.vue';
-import CheckoutMonetizze from '../components/CheckoutMonetizze.vue';
+import CheckoutKiwifyVue from '../components/CheckoutReceitaKiwify.vue';
+import CheckoutMonetizze from '../components/CheckoutReceitaMonetizze.vue';
 
 export default {
   components: {

@@ -17,6 +17,16 @@ const routes = [
     name: 'reclowcarbobrigado',
     component: () => import('../views/ReceitaLowCarbPageObrigado.vue'),
   },
+  {
+    path: '/gfc',
+    name: 'gfc',
+    component: () => import('../views/GoldenFitCapsPage.vue'),
+  },
+  {
+    path: '/comprargfc',
+    name: 'comprargfc',
+    component: () => import('../components/CheckoutGFCMonetizze.vue'),
+  },
 ];
 
 const router = createRouter({

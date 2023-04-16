@@ -15,6 +15,10 @@ h-page
       .col.text-white.text-center
         img(src="img/gfc/logoheader.png" style="width:150px")
 
+        //- <div class="text-h4 h-mt-md text-bold" style="color: yellow;">
+        //-   | PROMOÇÃO POTE EXTRA
+        //- </div>
+
         <div class="text-h5 h-mt-md text-bold">
           | Inovação e Segurança para Potencializar seu
           <b class="h-pl-xs" style="color: #a9c932; font-weight: 900">

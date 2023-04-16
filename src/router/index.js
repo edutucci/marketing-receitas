@@ -23,6 +23,16 @@ const routes = [
     component: () => import('../views/GoldenFitCapsPage.vue'),
   },
   {
+    path: '/gfcmenu',
+    name: 'gfcmenu',
+    component: () => import('../views/GoldenFitCapsMenu.vue'),
+  },
+  {
+    path: '/instabiolink',
+    name: 'instabiolink',
+    component: () => import('../views/InstaBioLinkPage.vue'),
+  },
+  {
     path: '/comprargfc',
     name: 'comprargfc',
     component: () => import('../components/CheckoutGFCMonetizze.vue'),

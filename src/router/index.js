@@ -37,6 +37,11 @@ const routes = [
     name: 'comprargfc',
     component: () => import('../components/CheckoutGFCMonetizze.vue'),
   },
+  {
+    path: '/gtcare',
+    name: 'gtcare',
+    component: () => import('../views/GestaCarePage.vue'),
+  },
 ];
 
 const router = createRouter({

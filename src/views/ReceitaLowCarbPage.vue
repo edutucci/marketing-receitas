@@ -10,64 +10,28 @@ h-page
     )
       h-icon(icon="fab fa-whatsapp" text-color="text-white" size="32px")
 
-  .row.bg-purple700.h-pa-lg
-    .col.text-white.text-bold.text-center
-      span.text-h5.text-center.text-center VEJA COMO É SIMPLES PERDER DE
-        span.text-h5.text-orange500  3 A 5KG EM POUCOS DIAS!
+  .bg-purple700.h-pa-lg
+    .row.justify-center.bg-purple700
+      .col.text-white.text-bold.text-center
+        span.text-h5.text-center.text-center DESCUBRA COMO CENTENAS DE PESSOAS
+          span.text-h5.text-orange500  COM O NOSSO PROGRAMA DE DIETA!
 
-      .h-mt-lg.text-body1.text-center Com as 300 Receitas Low Carb, Você Encontrará as Melhores e Mais Variadas Receitas que vão Definitivamente Queimar Gordura!
+    .row.justify-center.align-items-center.h-pa-lg
+      .col-mobile.col-xs-6.col-sm-8.col-md-6.col-lg-4.col-xl-4
+        img(src="img/300receitas/img-header.png" style="width:100%")
 
-      .row.justify-center
-        .col-auto(style="max-width: 1100px;")
-          .row.wrap.justify-center.align-items-center
-            .text-center.col-mobile.col-xs-12.col-sm-6.col-md-5.col-lg-4.col-xl-3
-              img(src="img/300receitas/capa3d300receitas2.png" style="width:100%")
-            .text-center.col-mobile.col-xs-12.col-sm-6.col-md-5.col-lg-4.col-xl-3
-              .row.justify-center.h-mt-md
-                .col-auto
-                  .row.h-mt-sm.justify-center
-                    .col-auto
-                      h-icon(icon="fas fa-check-circle" text-color="text-yellow700")
-                    .col.text-left.h-pl-sm.text-bold
-                      | Receitas Saudáveis Para Toda Família
-                  .row.h-mt-sm.justify-center
-                    .col-auto
-                      h-icon(icon="fas fa-check-circle" text-color="text-yellow700")
-                    .col.text-left.h-pl-sm.text-bold
-                      | Receitas Fáceis, Práticas, Simples E Deliciosas
-                  .row.h-mt-sm.justify-center
-                    .col-auto
-                      h-icon(icon="fas fa-check-circle" text-color="text-yellow700")
-                    .col.text-left.h-pl-sm.text-bold
-                      | Opções Para Todas As Refeições Do Dia
-                  .row.h-mt-sm.justify-center
-                    .col-auto
-                      h-icon(icon="fas fa-check-circle" text-color="text-yellow700")
-                    .col.text-left.h-pl-sm.text-bold
-                      | Cardápio Aprovado Por Nutricionistas
-                  .row.h-mt-sm.justify-center
-                    .col-auto
-                      h-icon(icon="fas fa-check-circle" text-color="text-yellow700")
-                    .col.text-left.h-pl-sm.text-bold
-                      | 6 Bônus PRO Exclusivos
-                  .row.h-mt-sm.justify-center
-                    .col-auto
-                      h-icon(icon="fas fa-check-circle" text-color="text-yellow700")
-                    .col.text-left.h-pl-sm.text-bold
-                      | Satisfação 100% Garantida
-
-          .row.justify-center.h-mt-md
-            .col-auto
-              h-btn(
-                rounded
-                text-color="text-white"
-                bg-color="bg-green700"
-                @click="goToDiv('prices')"
-              )
-                .text-h5.text-center SIM QUERO EMAGRECER
-          .row.justify-center.h-mt-md
-            .col-auto
-              img(src="img/site/comprasegura.png" style="width: 270px")
+    .row.justify-center.h-mt-sm
+      .col-auto
+        h-btn(
+          rounded
+          text-color="text-white"
+          bg-color="bg-green700"
+          @click="goToDiv('prices')"
+        )
+          .text-h5.text-center SIM QUERO EMAGRECER
+    .row.justify-center.h-mt-md
+      .col-auto.text-white
+        img(src="img/site/comprasegura.png" style="width: 270px")
 
   .bg-white.h-pa-lg
     .row
@@ -75,7 +39,7 @@ h-page
         .text-h6.text-bold.text-center O LIVRO DIGITAL 300 RECEITAS LOW CARB ESTÁ DIVIDIDO EM QUATRO MODALIDADES.
 
     .row.wrap.justify-center
-      .no-shrink.col-mobile.col-xs-6.col-sm-4.col-md-6.col-lg-3.col-xl-2
+      .no-shrink.col-mobile.col-xs-6.col-sm-8.col-md-5.col-lg-3.col-xl-2
         img(
           src="img/300receitas/cafe-da-manha-lowcarb.png" alt=""
           style="width:100%"
@@ -84,7 +48,7 @@ h-page
         .text-h5.text-bold.text-center CAFÉ DA MANHÃ
 
         p.text-center Descubra A Sensação De Começar Bem O Dia Com Refeições Que Vão Te Deixar Com Água Na Boca.
-      .no-shrink.col-mobile.col-xs-6.col-sm-4.col-md-6.col-lg-3.col-xl-2
+      .no-shrink.col-mobile.col-xs-6.col-sm-8.col-md-5.col-lg-3.col-xl-2
         img(
           src="img/300receitas/almoco-e-jantar-low-carb.png" alt=""
           style="width:100%"
@@ -92,7 +56,7 @@ h-page
 
         .text-h5.text-bold.text-center ALMOÇO, JANTAR E SALADAS
         p.text-center Tenha Um Almoço E Um Jantar Saboroso Com As Refeições Que Preparamos Especialmente Para Você.
-      .no-shrink.col-mobile.col-xs-6.col-sm-4.col-md-6.col-lg-3.col-xl-2
+      .no-shrink.col-mobile.col-xs-6.col-sm-8.col-md-5.col-lg-3.col-xl-2
         img(
           src="img/300receitas/sopalowcarb.png" alt=""
           style="width:100%"
@@ -100,8 +64,7 @@ h-page
 
         .text-h5.text-bold.text-center SOPAS
         p.text-center Sopas Deliciosas Preparadas Especialmente para Você.
-
-      .no-shrink.col-mobile.col-xs-6.col-sm-4.col-md-6.col-lg-3.col-xl-2
+      .no-shrink.col-mobile.col-xs-6.col-sm-8.col-md-5.col-lg-3.col-xl-2
         img(
           src="img/300receitas/doces-lowcarb.jpg" alt=""
           style="width:100%"

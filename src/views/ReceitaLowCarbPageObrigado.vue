@@ -6,7 +6,7 @@ h-page
 
   .row.wrap.justify-center.align-items-center
     .text-center.col-mobile.col-xs-12.col-sm-6.col-md-5.col-lg-4.col-xl-3
-      img(src="img/300receitas/capa3d300receitas2.png" style="width:100%")
+      img(src="/img/300receitas/capa3d300receitas2.png" style="width:100%")
 
   .h-pa-lg.text-center
     .text-h5.text-bold PARABÉNS.

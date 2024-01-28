@@ -4,7 +4,7 @@ h-card.bg-purple700(style="width:100%")
     .text-h5.text-bold 300 RECEITAS
     .text-h5.text-bold + 6 BONUS
     img(
-      src="img/300receitas/capa3d300receitas2.png" alt=""
+      src="/img/300receitas/capa3d300receitas2.png" alt=""
       style="width:100%"
     )
 
@@ -30,7 +30,7 @@ h-card.bg-purple700(style="width:100%")
     )
   h-card-section
     .h-mt-md.text-center
-      img(src="img/site/comprasegura.png" style="width: 100%")
+      img(src="/img/site/comprasegura.png" style="width: 100%")
 
 </template>
 

@@ -2,11 +2,11 @@
 h-page(padding)
   .row.justify-center.align-items-center(style="height: calc(100% - 100px)")
     .col-auto.text-center
-      img(src="img/site/imgtudocerto.png")
+      img(src="/img/site/imgtudocerto.png")
       br
       p.text-bold Tudo certo!
       p.text-gray Clique em continuar para ser direcionado para a página solicitada.
-      img.cursor-pointer(src="img/site/btntudocerto.png" @click="openUrl(afrogotars)")
+      img.cursor-pointer(src="/img/site/btntudocerto.png" @click="openUrl(afrogotars)")
 </template>
 
 <script>

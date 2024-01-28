@@ -11,48 +11,48 @@
         h-card.card-prod
           h-card-section.text-center
             img.cursor-pointer(
-              src="img/gestacare/5p.png" alt=""
+              src="/img/gestacare/5p.png" alt=""
               style="width:100%"
               @click="openUrl(kit5p)"
             )
 
             .text-center
-              img(src="img/gfc/fretegratis1.png" style="width: 150px")
+              img(src="/img/gfc/fretegratis1.png" style="width: 150px")
       .col-auto.h-pa-sm.h-pa-sm
         h-card.h-mt-md.card-prod
           h-card-section
             img.cursor-pointer(
-              src="img/gestacare/2p.png" alt=""
+              src="/img/gestacare/2p.png" alt=""
               style="width:100%"
               @click="openUrl(kit2p)"
             )
 
             .text-center
-              img(src="img/gfc/fretegratis1.png" style="width: 150px")
+              img(src="/img/gfc/fretegratis1.png" style="width: 150px")
 
       .col-auto.h-pa-sm.h-pa-sm
         h-card.h-mt-md.card-prod
           h-card-section
             img.cursor-pointer(
-              src="img/gestacare/3p.png" alt=""
+              src="/img/gestacare/3p.png" alt=""
               style="width:100%"
               @click="openUrl(kit3p)"
             )
 
             .text-center
-              img(src="img/gfc/fretegratis1.png" style="width: 150px")
+              img(src="/img/gfc/fretegratis1.png" style="width: 150px")
 
       .col-auto.h-pa-sm.h-pa-sm
         h-card.h-mt-md.card-prod
           h-card-section
             img.cursor-pointer(
-              src="img/gestacare/1p.png" alt=""
+              src="/img/gestacare/1p.png" alt=""
               style="width:100%"
               @click="openUrl(kit1p)"
             )
 
             .text-center
-              img(src="img/gfc/fretegratis1.png" style="width: 150px")
+              img(src="/img/gfc/fretegratis1.png" style="width: 150px")
 
 </template>
 

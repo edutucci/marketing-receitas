@@ -1,7 +1,7 @@
 <template lang="pug">
 .row.justify-center.align-items-center(style="height:calc(100vh - 100px)")
   .col-auto.text-center.h-mt-md
-    img(src="img/site/imgtudocerto.png")
+    img(src="/img/site/imgtudocerto.png")
 
     .text-h5.text-center.text-gray700.text-bold.h-mt-xl
       | Tudo certo!

@@ -13,13 +13,13 @@
             .text-body.text-bold(style="opacity: 0.7") Tratamento para 1 mês
           h-card-section.text-center
             img.cursor-pointer(
-              src="img/gfc/comprar1pote.png" alt=""
+              src="/img/gfc/comprar1pote.png" alt=""
               style="width:80%"
               @click="openUrl(kit1p)"
             )
 
             .text-center
-              img(src="img/gfc/fretegratis1.png" style="width: 150px")
+              img(src="/img/gfc/fretegratis1.png" style="width: 150px")
   .col
     .row.justify-center
       .col-auto
@@ -29,13 +29,13 @@
             .text-body.text-bold(style="opacity: 0.7") Tratamento para 2 meses
           h-card-section
             img.cursor-pointer(
-              src="img/gfc/comprar2potes.png" alt=""
+              src="/img/gfc/comprar2potes.png" alt=""
               style="width:100%"
               @click="openUrl(kit2p)"
             )
 
             .text-center
-              img(src="img/gfc/fretegratis1.png" style="width: 150px")
+              img(src="/img/gfc/fretegratis1.png" style="width: 150px")
 
   .col
     .row.justify-center
@@ -46,13 +46,13 @@
             .text-body.text-bold(style="opacity: 0.7") Tratamento para 3 meses
           h-card-section
             img.cursor-pointer(
-              src="img/gfc/comprar3potes.png" alt=""
+              src="/img/gfc/comprar3potes.png" alt=""
               style="width:100%"
               @click="openUrl(kit3p)"
             )
 
             .text-center
-              img(src="img/gfc/fretegratis1.png" style="width: 150px")
+              img(src="/img/gfc/fretegratis1.png" style="width: 150px")
   .col
     .row.justify-center
       .col-auto
@@ -62,13 +62,13 @@
             .text-body.text-bold(style="opacity: 0.7") Tratamento para 5 meses
           h-card-section
             img.cursor-pointer(
-              src="img/gfc/comprar5potes.png" alt=""
+              src="/img/gfc/comprar5potes.png" alt=""
               style="width:100%"
               @click="openUrl(kit5p)"
             )
 
             .text-center
-              img(src="img/gfc/fretegratis1.png" style="width: 150px")
+              img(src="/img/gfc/fretegratis1.png" style="width: 150px")
 
 </template>
 

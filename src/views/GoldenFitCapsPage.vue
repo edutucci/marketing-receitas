@@ -13,7 +13,7 @@ h-page
   .bkgreen.h-pa-lg
     .row
       .col.text-white.text-center
-        img(src="img/gfc/logoheader.png" style="width:150px")
+        img(src="/img/gfc/logoheader.png" style="width:150px")
 
         //- <div class="text-h4 h-mt-md text-bold" style="color: yellow;">
         //-   | PROMOÇÃO POTE EXTRA
@@ -33,10 +33,10 @@ h-page
 
     .row.justify-center
       .col-auto
-        img(src="img/gfc/img-header-2.png" style="width: 270px")
+        img(src="/img/gfc/img-header-2.png" style="width: 270px")
     .row.justify-center
       .col-auto
-        img(src="img/gfc/beneficios1.png" style="width:270px")
+        img(src="/img/gfc/beneficios1.png" style="width:270px")
 
     .row.justify-center.h-mt-md
       .col-auto
@@ -65,7 +65,7 @@ h-page
 
     .row.justify-center.h-mt-md
       .col-auto
-        img(src="img/gfc/itenspraticidade.png" style="width:270px")
+        img(src="/img/gfc/itenspraticidade.png" style="width:270px")
 
     .row.justify-center.h-mt-md
       .col-auto
@@ -88,7 +88,7 @@ h-page
 
     .row.justify-center.h-mt-md
       .col-auto
-        img(src="img/gfc/beneficios2.png" style="width:280px")
+        img(src="/img/gfc/beneficios2.png" style="width:280px")
 
   .bg-white.h-pa-lg
     .row
@@ -106,7 +106,7 @@ h-page
 
     .row.justify-center.h-mt-md
       .col-auto
-        img(src="img/gfc/depoimento1.png" style="width:280px")
+        img(src="/img/gfc/depoimento1.png" style="width:280px")
 
     .row.justify-center.h-mt-md
       .col-auto
@@ -128,19 +128,19 @@ h-page
 
     .row.justify-center.h-mt-md
       .col-auto
-        img(src="img/gfc/composicao1.png" style="width:100%")
+        img(src="/img/gfc/composicao1.png" style="width:100%")
 
     .row.justify-center.h-mt-md
       .col-auto
-        img(src="img/gfc/composicao2.png" style="width:100%")
+        img(src="/img/gfc/composicao2.png" style="width:100%")
 
     .row.justify-center.h-mt-md
       .col-auto
-        img(src="img/gfc/composicao3.png" style="width:100%")
+        img(src="/img/gfc/composicao3.png" style="width:100%")
 
     .row.justify-center.h-mt-md
       .col-auto
-        img(src="img/gfc/garantia.png" style="width:100%")
+        img(src="/img/gfc/garantia.png" style="width:100%")
 
     .row.justify-center.h-mt-md(ref="prices")
       .col-auto
@@ -175,7 +175,7 @@ h-page
         .text-h5.text-center.text-bold FORMAS DE PAGAMENTO
         .row.justify-center.h-mt-md
           .col-auto
-            img(src="img/gfc/formaspagamento.png" style="width:270px")
+            img(src="/img/gfc/formaspagamento.png" style="width:270px")
       .col-auto
       .col-auto
 

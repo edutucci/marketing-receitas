@@ -18,7 +18,7 @@ h-page
 
     .row.justify-center.align-items-center.h-pa-lg
       .col-mobile.col-xs-6.col-sm-8.col-md-6.col-lg-4.col-xl-4
-        img(src="img/300receitas/img-header.png" style="width:100%")
+        img(src="/img/300receitas/img-header.png" style="width:100%")
 
     .row.justify-center.h-mt-sm
       .col-auto
@@ -31,7 +31,7 @@ h-page
           .text-h5.text-center SIM QUERO EMAGRECER
     .row.justify-center.h-mt-md
       .col-auto.text-white
-        img(src="img/site/comprasegura.png" style="width: 270px")
+        img(src="/img/site/comprasegura.png" style="width: 270px")
 
   .bg-white.h-pa-lg
     .row
@@ -41,7 +41,7 @@ h-page
     .row.wrap.justify-center
       .no-shrink.col-mobile.col-xs-6.col-sm-8.col-md-5.col-lg-3.col-xl-2
         img(
-          src="img/300receitas/cafe-da-manha-lowcarb.png" alt=""
+          src="/img/300receitas/cafe-da-manha-lowcarb.png" alt=""
           style="width:100%"
         )
 
@@ -50,7 +50,7 @@ h-page
         p.text-center Descubra A Sensação De Começar Bem O Dia Com Refeições Que Vão Te Deixar Com Água Na Boca.
       .no-shrink.col-mobile.col-xs-6.col-sm-8.col-md-5.col-lg-3.col-xl-2
         img(
-          src="img/300receitas/almoco-e-jantar-low-carb.png" alt=""
+          src="/img/300receitas/almoco-e-jantar-low-carb.png" alt=""
           style="width:100%"
         )
 
@@ -58,7 +58,7 @@ h-page
         p.text-center Tenha Um Almoço E Um Jantar Saboroso Com As Refeições Que Preparamos Especialmente Para Você.
       .no-shrink.col-mobile.col-xs-6.col-sm-8.col-md-5.col-lg-3.col-xl-2
         img(
-          src="img/300receitas/sopalowcarb.png" alt=""
+          src="/img/300receitas/sopalowcarb.png" alt=""
           style="width:100%"
         )
 
@@ -66,7 +66,7 @@ h-page
         p.text-center Sopas Deliciosas Preparadas Especialmente para Você.
       .no-shrink.col-mobile.col-xs-6.col-sm-8.col-md-5.col-lg-3.col-xl-2
         img(
-          src="img/300receitas/doces-lowcarb.jpg" alt=""
+          src="/img/300receitas/doces-lowcarb.jpg" alt=""
           style="width:100%"
         )
 
@@ -85,7 +85,7 @@ h-page
 
     .row.justify-center.h-mt-md
       .col-auto
-        img(src="img/site/comprasegura.png" style="width: 270px")
+        img(src="/img/site/comprasegura.png" style="width: 270px")
 
   .h-pa-lg.bg-orange700.text-white.text-center
     .text-h6 ALÉM DAS 300 RECEITAS LOW CARB VOCÊ VAI RECEBER GRATUITAMENTE
@@ -96,7 +96,7 @@ h-page
     .row.wrap.justify-center.align-items-center.text-white
       .no-shrink.col-mobile.col-xs-6.col-sm-4.col-md-4.col-lg-3.col-xl-2
         img(
-          src="img/300receitas/receitadetox3d.png" alt=""
+          src="/img/300receitas/receitadetox3d.png" alt=""
           style="width:100%"
         )
 
@@ -104,7 +104,7 @@ h-page
 
       .no-shrink.col-mobile.col-xs-6.col-sm-4.col-md-4.col-lg-3.col-xl-2
         img(
-          src="img/300receitas/vitaminas3d.png" alt=""
+          src="/img/300receitas/vitaminas3d.png" alt=""
           style="width:100%"
         )
 
@@ -112,7 +112,7 @@ h-page
 
       .no-shrink.col-mobile.col-xs-6.col-sm-4.col-md-4.col-lg-3.col-xl-2
         img(
-          src="img/300receitas/exercicios3d.png" alt=""
+          src="/img/300receitas/exercicios3d.png" alt=""
           style="width:100%"
         )
 
@@ -120,7 +120,7 @@ h-page
 
       .no-shrink.col-mobile.col-xs-6.col-sm-4.col-md-4.col-lg-3.col-xl-2
         img(
-          src="img/300receitas/danca3d.png" alt=""
+          src="/img/300receitas/danca3d.png" alt=""
           style="width:100%"
         )
 
@@ -128,7 +128,7 @@ h-page
 
       .no-shrink.col-mobile.col-xs-6.col-sm-4.col-md-4.col-lg-3.col-xl-2
         img(
-          src="img/300receitas/capa3dperderpesocomendo.png" alt=""
+          src="/img/300receitas/capa3dperderpesocomendo.png" alt=""
           style="width:100%"
         )
 
@@ -136,7 +136,7 @@ h-page
 
       .no-shrink.col-mobile.col-xs-6.col-sm-4.col-md-4.col-lg-3.col-xl-2
         img(
-          src="img/300receitas/alimentosav3d.png" alt=""
+          src="/img/300receitas/alimentosav3d.png" alt=""
           style="width:100%"
         )
 
@@ -150,44 +150,44 @@ h-page
     .row.wrap.justify-center
       .no-shrink.col-mobile.col-xs-12.col-sm-6.col-md-6.col-lg-3.col-xl-2
         img(
-          src="img/300receitas/depoimento-3-2.png" alt=""
+          src="/img/300receitas/depoimento-3-2.png" alt=""
           style="width:100%"
         )
       .no-shrink.col-mobile.col-xs-12.col-sm-6.col-md-6.col-lg-3.col-xl-2
         img(
-          src="img/300receitas/depoimento-4.png" alt=""
+          src="/img/300receitas/depoimento-4.png" alt=""
           style="width:100%"
         )
       .no-shrink.col-mobile.col-xs-12.col-sm-6.col-md-6.col-lg-3.col-xl-2
         img(
-          src="img/300receitas/depoimento-5.png" alt=""
+          src="/img/300receitas/depoimento-5.png" alt=""
           style="width:100%"
         )
       .no-shrink.col-mobile.col-xs-12.col-sm-6.col-md-6.col-lg-3.col-xl-2
         img(
-          src="img/300receitas/depoimento-6.png" alt=""
+          src="/img/300receitas/depoimento-6.png" alt=""
           style="width:100%"
         )
 
     .row.wrap.justify-center
       .no-shrink.col-mobile.col-xs-12.col-sm-6.col-md-6.col-lg-3.col-xl-2
         img(
-          src="img/300receitas/cliente-aline.png" alt=""
+          src="/img/300receitas/cliente-aline.png" alt=""
           style="width:100%"
         )
       .no-shrink.col-mobile.col-xs-12.col-sm-6.col-md-6.col-lg-3.col-xl-2
         img(
-          src="img/300receitas/cliente-karla.png" alt=""
+          src="/img/300receitas/cliente-karla.png" alt=""
           style="width:100%"
         )
       .no-shrink.col-mobile.col-xs-12.col-sm-6.col-md-6.col-lg-3.col-xl-2
         img(
-          src="img/300receitas/cliente-livia.png" alt=""
+          src="/img/300receitas/cliente-livia.png" alt=""
           style="width:100%"
         )
       .no-shrink.col-mobile.col-xs-12.col-sm-6.col-md-6.col-lg-3.col-xl-2
         img(
-          src="img/300receitas/cliente-luciana.png" alt=""
+          src="/img/300receitas/cliente-luciana.png" alt=""
           style="width:100%"
         )
 
@@ -195,7 +195,7 @@ h-page
     .row.wrap.text-white.justify-center.align-items-center
       .no-shrink.col-mobile.col-xs-12.col-sm-6.col-md-5.col-lg-4.col-xl-3
         img(
-          src="img/300receitas/selo7dias.png" alt=""
+          src="/img/300receitas/selo7dias.png" alt=""
           style="width:100%"
         )
       .no-shrink.col-mobile.col-xs-12.col-sm-6.col-md-5.col-lg-4.col-xl-3
@@ -216,7 +216,7 @@ h-page
 
   //-   .row.justify-center.h-mt-md
   //-     .col-auto
-  //-       img(src="img/site/comprasegura.png" style="width: 270px")
+  //-       img(src="/img/site/comprasegura.png" style="width: 270px")
   .bg-white
     .row.wrap.justify-around.align-items-center.h-pa-md.bg-white(ref="prices")
       .no-shrink.col-mobile.col-xs-12.col-sm-9.col-md-3.col-lg-3.col-xl-2.h-mb-md.h-pa-xs
@@ -255,11 +255,11 @@ h-page
 
   .row.justify-center.h-mt-md
     .col-auto
-      img(src="img/site/modo-de-pagamento.png" style="width: 270px")
+      img(src="/img/site/modo-de-pagamento.png" style="width: 270px")
 
   .row.justify-center.h-mt-md
     .col-auto
-      img(src="img/site/comprasegura.png" style="width: 270px")
+      img(src="/img/site/comprasegura.png" style="width: 270px")
 
   .bg-purple700.h-pa-lg
     .column.text-center.h-pa-md
@@ -288,7 +288,7 @@ h-page
         .text-body1.text-bold.text-center.text-white FORMA DE PAGAMENTO
         br
         img.cursor-pointer(
-          src="img/site/modo-de-pagamento.png" alt=""
+          src="/img/site/modo-de-pagamento.png" alt=""
           style="width:250px"
         )
       .col-auto.h-pa-sm.text-white.text-center

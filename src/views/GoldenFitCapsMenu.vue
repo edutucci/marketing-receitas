@@ -13,7 +13,7 @@ h-page
   .bkgreen(style="height: calc(100vh)")
     .row.justify-center
       .col.text-white.text-center
-        img(src="img/gfc/logoheader2.png" style="width:150px")
+        img(src="/img/gfc/logoheader2.png" style="width:150px")
 
         <div class="text-h5 h-mt-md text-bold">
           | Escolha qual opção você quer para Potencializar seu

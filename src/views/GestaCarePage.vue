@@ -19,7 +19,7 @@ h-page
 
     .bg-2.h-pa-md
       .text-center.h-mt-lg
-        img(src="img/gestacare/logo2.png" style="width:150px")
+        img(src="/img/gestacare/logo2.png" style="width:150px")
 
       .row.justify-center.h-mt-lg
         .col-auto.heading-title.text-bold.text-h3.text-center
@@ -44,7 +44,7 @@ h-page
 
     .bkblue.row.wrap.h-pa-md.align-items-center.justify-center
       .no-shrink.col-mobile.col-xs-10.col-sm-3.col-md-4.col-lg-3.col-xl-2
-        img(src="img/gestacare/barbebe.png" style="width: 85%")
+        img(src="/img/gestacare/barbebe.png" style="width: 85%")
 
       .no-shrink.h-pa-sm.col-mobile.col-xs-10.col-sm-7.col-md-8.col-lg-3.col-xl-2
         .row.justify-center.h-mt-md
@@ -89,7 +89,7 @@ h-page
               .text-h5.text-center.h-pa-md CLIQUE AQUI
 
       .no-shrink.col-mobile.col-xs-10.col-sm-3.col-md-4.col-lg-3.col-xl-2
-        img(src="img/gestacare/paibebe.png" style="width: 85%")
+        img(src="/img/gestacare/paibebe.png" style="width: 85%")
 
     .bkblue.row.wrap.h-pa-md.align-items-center.justify-center
       .no-shrink.h-pa-sm.col-mobile.col-xs-10.col-sm-7.col-md-8.col-lg-3.col-xl-2
@@ -100,7 +100,7 @@ h-page
           | Após adquirir você recebe 30 dias de garantia, queremos que você se sinta totalmente confortável, por isso caso você peça reembolso, todo seu dinheiro será devolvido!
 
       .no-shrink.col-mobile.col-xs-10.col-sm-3.col-md-4.col-lg-3.col-xl-2
-        img(src="img/gestacare/selogarantia.png" style="width: 85%")
+        img(src="/img/gestacare/selogarantia.png" style="width: 85%")
 
     .bg-2.h-pa-md(ref="prices")
       CheckoutGTCareMonetizze
@@ -111,7 +111,7 @@ h-page
           .text-body1.text-bold.text-center.text-white FORMA DE PAGAMENTO
           br
           img.cursor-pointer(
-            src="img/site/modo-de-pagamento.png" alt=""
+            src="/img/site/modo-de-pagamento.png" alt=""
             style="width:250px"
           )
         .col-auto.h-pa-sm.text-white.text-center
@@ -158,7 +158,7 @@ export default {
 
 <style scoped lang="css">
 .bg-2 {
-  background-image: url('/img/gestacare/bg-2.jpg');
+  background-image: url('//img/gestacare/bg-2.jpg');
 }
 .heading-title {
   color: #263F5D;
